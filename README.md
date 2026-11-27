@@ -1,6 +1,6 @@
 # External IP History for Home Assistant
 
-[![Open your Home Assistant instance and open this repository in HACS.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=artur-heise&repository=ext-ip-history&category=integration)
+[![Open your Home Assistant instance and open this repository in HACS.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=artur-heise&repository=hass-whatsmyIP&category=integration)
 
 Polls your external IP address (default every 60 minutes), keeps a history, and writes a log file.
 
@@ -12,7 +12,7 @@ Polls your external IP address (default every 60 minutes), keeps a history, and 
 ## Install via HACS
 
 1. Click the badge above (or in HACS: ⋮ → **Custom repositories** → add
-   `https://github.com/artur-heise/ext-ip-history`, type **Integration**).
+   `https://github.com/artur-heise/hass-whatsmyIP`, type **Integration**).
 2. Click **Download**, then restart Home Assistant.
 3. **Settings → Devices & Services → Add Integration → External IP History**.
    Set the URL (default `https://myexternalip.com/raw`, must return the IP as plain text) and the interval.

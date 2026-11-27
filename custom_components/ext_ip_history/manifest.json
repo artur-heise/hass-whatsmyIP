@@ -3,9 +3,9 @@
   "name": "External IP History",
   "codeowners": ["@artur-heise"],
   "config_flow": true,
-  "documentation": "https://github.com/artur-heise/ext-ip-history",
+  "documentation": "https://github.com/artur-heise/hass-whatsmyIP",
   "iot_class": "cloud_polling",
-  "issue_tracker": "https://github.com/artur-heise/ext-ip-history/issues",
+  "issue_tracker": "https://github.com/artur-heise/hass-whatsmyIP/issues",
   "requirements": [],
   "version": "1.0.0"
 }
