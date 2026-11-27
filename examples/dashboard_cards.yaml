@@ -1,0 +1,22 @@
+# Dashboard -> Edit -> Add card -> Manual, paste this.
+# If your entity is not sensor.external_ip, change it in all places below.
+type: vertical-stack
+cards:
+  - type: markdown
+    title: External IP – last 24 h
+    content: |
+      **Current:** `{{ states('sensor.external_ip') }}`
+
+      | Time | IP |
+      |---|---|
+      {% for r in state_attr('sensor.external_ip', 'readings_24h') or [] -%}
+      | {{ as_timestamp(r.ts) | timestamp_custom('%d.%m %H:%M') }} | {{ r.ip }} |
+      {% endfor %}
+  - type: markdown
+    title: Last 50 IP changes
+    content: |
+      | When | New IP | Previous IP |
+      |---|---|---|
+      {% for r in state_attr('sensor.external_ip', 'changes') or [] -%}
+      | {{ as_timestamp(r.ts) | timestamp_custom('%d.%m.%Y %H:%M') }} | {{ r.ip }} | {{ r.previous or '—' }} |
+      {% endfor %}

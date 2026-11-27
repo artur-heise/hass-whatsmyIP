@@ -1,0 +1,11 @@
+{
+  "domain": "ext_ip_history",
+  "name": "External IP History",
+  "codeowners": ["@artur-heise"],
+  "config_flow": true,
+  "documentation": "https://github.com/artur-heise/ext-ip-history",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/artur-heise/ext-ip-history/issues",
+  "requirements": [],
+  "version": "1.0.0"
+}
